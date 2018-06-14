@@ -83,5 +83,8 @@ Please make sure to change the iteration amount (line 16 and line 36 in the orig
 The value `27` should be changed to `(amount of frames of your animation) + 1`.
 There are also some options in `AsciiController.pl` to change the animation speed.
 
+## Authors
+Originally used in the intermediate tournaments for the Project Multi Agent Systems course at Delft University of Technology by Team Wombat. Authored by [Thijs](https://github.com/molenzwiebel) and [Thijs](https://github.com/ThijsRay).
+
 ## License
 This project is licensed under [The Unlicense](LICENSE).
