@@ -1,0 +1,38 @@
+se "../../../Shared" as knowledge.                                                                                    
+use "../../../knowledge" as knowledge.
+use "../DrawActions/drawWombat".
+use "../DrawActions/clearWombat".
+use "../AsciiController" as knowledge.
+use "../AsciiControllerActions".
+order=linear.
+
+module AsciiController {
+
+    % Draw ASCII above our main nexi
+    if bel(
+        timer("overlay", Interval),
+        (currentInterval(Interval, M)),
+        iteration(Iteration),
+        Iteration < 18 % Change this number to define the maximum amount of cycles. The animation will clear itself after x amount of iterations.
+    )
+    then { 
+        
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % PASTE GENERATED ASCII HERE
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+        % Set this number 27 to the amount of frames in your animation + 1.
+        if bel(M >= 27) then {
+            if bel(
+                intervalOverlay(I),
+                totalDurationOverlay(Duration),
+                Total is I * Duration,
+                NewIteration is Iteration + 1
+            ) then canceltimer("overlay") + starttimer("overlay", I, Total) + delete(iteration(Iteration)) + insert(iteration(NewIteration)).
+        }
+    }
+
+    % This is here to clear everything after x iterations. Make sure to edit this number as well if you change the iteration amount.
+    if bel(iteration(Iteration), Iteration = 18, NewIteration is Iteration + 1) then delete(iteration(Iteration)) + insert(iteration(NewIteration)) + (asciiSlave_0).send(show("")) + (asciiSlave_1).send(show("\u000a")) + (asciiSlave_2).send(show("\u000a\u000a")) + (asciiSlave_3).send(show("\u000a\u000a\u000a")) + (asciiSlave_4).send(show("\u000a\u000a\u000a\u000a")) + (asciiSlave_5).send(show("\u000a\u000a\u000a\u000a\u000a")) + (asciiSlave_6).send(show("\u000a\u000a\u000a\u000a\u000a\u000a")) + (asciiSlave_7).send(show("\u000a\u000a\u000a\u000a\u000a\u000a\u000a")) + (asciiSlave_8).send(show("\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a")) + (asciiSlave_9).send(show("\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a")) + (asciiSlave_10).send(show("\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a")) + (asciiSlave_11).send(show("\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a")) + (asciiSlave_12).send(show("\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a")) + (asciiSlave_13).send(show("\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a")) + (asciiSlave_14).send(show("\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a")) + (asciiSlave_15).send(show("\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a")) + (asciiSlave_16).send(show("\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a")) + (asciiSlave_17).send(show("\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a")) + (asciiSlave_18).send(show("\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a")) + (asciiSlave_19).send(show("\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a")) + (asciiSlave_20).send(show("\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a")) + (asciiSlave_21).send(show("\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a")) + (asciiSlave_22).send(show("\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a")) + (asciiSlave_23).send(show("\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a")) + (asciiSlave_24).send(show("\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a")).
+
+}

@@ -1,0 +1,9 @@
+use "../AsciiController" as knowledge. 
+ 
+module AsciiControllerEvent {    
+    % Update timer percept 
+    forall percept(timer(Name, Elapsed)), not(bel(timer(Name, Elapsed))) 
+        do insert(timer(Name, Elapsed)). 
+    forall bel(timer(Name, Elapsed)), not(percept(timer(Name, Elapsed))) 
+        do delete(timer(Name, Elapsed)). 
+} 

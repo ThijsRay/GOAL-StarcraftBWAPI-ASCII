@@ -1,0 +1,8 @@
+use "../AsciiController" as knowledge.
+
+module AsciiControllerInit {
+    % Start the timer
+    if bel(intervalOverlay(Interval), totalDurationOverlay(Duration), TotalInterval is Duration * Interval)
+        then starttimer("overlay", Interval, TotalInterval) + insert(iteration(0)).
+}
+

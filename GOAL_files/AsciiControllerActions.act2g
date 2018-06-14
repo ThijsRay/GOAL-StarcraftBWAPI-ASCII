@@ -1,0 +1,15 @@
+% Defines the debugdraw/1 action
+define debugdraw(Text) with
+    pre { true }
+    post { true }
+    
+% Defines the debugdraw/2 action
+define debugdraw(Id, Text) with
+    pre { true }
+    post { true }
+
+% Defines the debugdraw/3 action
+define debugdraw(X, Y, Text) with
+    pre { true }
+    post { true }
+

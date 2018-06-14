@@ -1,0 +1,9 @@
+use "../AsciiController" as knowledge.                                                                          
+use "../AsciiControllerActions".
+order=linear.
+
+module AsciiSlave {
+
+    if (_).sent(show(T)) then debugdraw(T).
+
+}
