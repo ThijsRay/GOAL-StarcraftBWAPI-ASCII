@@ -27,7 +27,7 @@ define asciiController as agent {
 }
 
 define asciiSlave as agent {                                                                                           
-    use Controllers.AsciiController.Slave.AsciiSlave as main.
+    use AsciiController.Slave.AsciiSlave as main.
 }
 
 ```
