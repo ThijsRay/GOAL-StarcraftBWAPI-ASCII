@@ -1,6 +1,8 @@
 # GOAL StarcraftBWAPI ASCII art generator
 Tool to generate ASCII art based on images for Starcraft: Brood Wars using the [GOAL Starcraft Environment](https://github.com/eishub/Starcraft).
 
+![Example](https://i.imgur.com/AG0gbEK.gif)
+
 ## Requirements
 - Complete installation of the GOAL Starcraft Environment. Full instructions can be found on https://github.com/eishub/Starcraft/wiki/Install-Guide
 - NodeJS
@@ -76,4 +78,10 @@ Place your image in the directory and edit the configuration in `ascii.js` to ma
 ```
 node ascii.js
 ```
-to output the generated ASCII in the terminal. This output should be pasted in `Master/AsciiController.mod2g`.
+to output the generated ASCII in the terminal. This output should be pasted in `Master/AsciiController.mod2g`. 
+Please make sure to change the iteration amount (line 16 and line 36 in the original file) from 18 to something else if you want that.
+The value `27` should be changed to `(amount of frames of your animation) + 1`.
+There are also some options in `AsciiController.pl` to change the animation speed.
+
+## License
+This project is licensed under [The Unlicense](LICENSE).
