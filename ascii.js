@@ -1,7 +1,7 @@
 // START CONFIG
 
-// The path of the file that should be converted. Should be a png file.
-const FILENAME = "flag.png";
+// The path of the file that should be converted.
+const FILENAME = "example.png";
 
 // Define the dimensions of the output image. These are set to the correct dimensions for Starcraft.
 const WIDTH = 50;
