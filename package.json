@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "gm": "^1.23.1",
+    "nearest-color": "^0.4.2",
+    "pngjs": "^3.3.3"
+  }
+}
