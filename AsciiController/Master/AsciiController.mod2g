@@ -1,7 +1,3 @@
-se "../../../Shared" as knowledge.                                                                                    
-use "../../../knowledge" as knowledge.
-use "../DrawActions/drawWombat".
-use "../DrawActions/clearWombat".
 use "../AsciiController" as knowledge.
 use "../AsciiControllerActions".
 order=linear.
