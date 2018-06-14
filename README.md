@@ -15,7 +15,7 @@ yarn
 in your terminal of choice.
 
 ## Usage
-Edit the configuration in `ascii.js`. Next, run
+Place your image in the directory and edit the configuration in `ascii.js` to match the file name. Next, run
 ```
 node ascii.js
 ```
